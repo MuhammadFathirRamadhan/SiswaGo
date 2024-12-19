@@ -26,3 +26,4 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 // Halaman Dashboard (hanya untuk user yang sudah login)
 Route::middleware('auth')->get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+

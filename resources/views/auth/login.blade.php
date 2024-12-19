@@ -3,7 +3,7 @@
 @section('main-content')
 <section class="text-center pb-5">
     <div style="height: 500px;">
-        <img src="{{ asset('img/backgroundsiswago.jpg') }}" alt="Background" style="width: 100%; height: 100%; object-fit: cover;">
+        <img src="{{ asset('img/backgroundsiswago.png') }}" alt="Background" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
 
     <div class="card mx-4 mx-md-5 shadow-5-strong" style="margin-top: -100px; background: hsla(0, 0%, 100%, 0.7); backdrop-filter: blur(30px);">
@@ -25,7 +25,7 @@
                     <input type="password" class="form-control" name="password" placeholder="Password" required>
                     <label>Password</label>
                 </div>
-                <button type="submit" class="btn btn-warning btn-block mb-4">Sign in</button>
+                <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
                 <p>Not registered yet? <a href="{{ route('register') }}">Register now!</a></p>
             </form>
         </div>

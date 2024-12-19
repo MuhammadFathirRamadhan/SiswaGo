@@ -6,15 +6,13 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Pickup;
 use App\Models\Driver;
 use App\Models\Student;
-use App\Models\Class; // Model untuk kelas
-use App\Models\ClassModel;
-use PhpParser\Builder\Class_;
+use App\Models\ClassModel; // Model untuk kelas, pastikan ini sesuai
 
 class DashboardController extends Controller
 {
     public function index()
     {
-        return view('dashboard', [
+        return view('admin.dashboard', [
             'user' => Auth::user(),
 
             // Menghitung total siswa
